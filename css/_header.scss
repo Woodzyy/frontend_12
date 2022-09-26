@@ -1,0 +1,12 @@
+@import 'mixin';
+
+
+.header {
+    @include flex(flex, row, space-around, center, nowrap);
+    background-color: $colorMain;
+
+    .logo {
+        @include flex(flex, row, space-between, center, nowrap);
+        border: 2px solid black;
+    }
+}

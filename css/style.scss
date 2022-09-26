@@ -1,0 +1,18 @@
+/* connecting fonts */
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('fonts/MyriadPro-Regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+$size: 100px;
+$colorMain:#ffffff;
+$colorAdditional:#5094f2;
+$colorSecondary: #d94748;
+$colorSpecial:#ebbb11;
+
+@import 'header';
+@import 'mixin';
