@@ -1,11 +1,19 @@
 /* connecting fonts */
 @font-face {
   font-family: "Myriad Pro";
-  src: url("fonts/MyriadPro-Regular.woff2");
-  font-weight: 400;
+  src: url("../fonts/MyriadPro-Regular.woff2");
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
+body {
+  font-family: "Myriad Pro";
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -20,5 +28,46 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  border: 2px solid black;
+  margin: 33px 0;
+  width: 12%;
+}
+.header .logo .logo__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #5094f2;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.header .logo .logo__cap {
+  font-size: 42.4px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.header .nav {
+  width: 28%;
+}
+.header .nav .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 20.4px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.header .nav .menu .menu__link {
+  color: #7b7b7b;
+  padding: 43px 0;
+}
+.header .nav .menu .menu__link:hover {
+  color: #5e5e5e;
+  border-bottom: 4px solid #5094f2;
 }

@@ -2,10 +2,18 @@
 
 @font-face {
   font-family: 'Myriad Pro';
-  src: url('fonts/MyriadPro-Regular.woff2');
-  font-weight: 400;
+  src: url('../fonts/MyriadPro-Regular.woff2');
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;
+}
+
+body {
+  font-family: 'Myriad Pro' ;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 $size: 100px;
