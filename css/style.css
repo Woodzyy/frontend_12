@@ -39,7 +39,6 @@ a {
   align-items: center;
   flex-wrap: nowrap;
   width: 18%;
-  border: 2px solid crimson;
 }
 .header .header__item .logo .logo__block {
   display: flex;
@@ -51,7 +50,6 @@ a {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  border: 2px solid rgb(23, 20, 220);
 }
 .header .header__item .logo .logo__cap {
   font-size: 42.4px;
@@ -96,6 +94,11 @@ a {
   align-items: center;
   flex-wrap: nowrap;
 }
+.title .title__item .title__img {
+  width: auto;
+  margin: 3% 0;
+  padding: 0;
+}
 .title .title__item .title__text {
   width: 39%;
   margin: 0;
@@ -109,6 +112,8 @@ a {
 }
 .title .title__item .title__text .title__text--secondary {
   width: 61%;
+  margin: 2% 0;
+  padding: 0;
   font-weight: 400;
   font-size: 28px;
   line-height: 44px;
@@ -119,7 +124,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  width: 43%;
+  width: 36%;
   margin: 4% 2%;
   padding: 0;
   font-weight: 400;
@@ -179,7 +184,7 @@ a {
 .content .content-holder .content__item .content__item--additional {
   background-color: #ebbb11;
 }
-.content .content-holder .content__item .content-title {
+.content .content-holder .content__item .content__title {
   width: 77%;
   margin: 6% 0 0;
   padding: 0;
@@ -189,8 +194,8 @@ a {
   text-align: center;
   color: #5094f2;
 }
-.content .content-holder .content__item .content-text {
-  width: 77%;
+.content .content-holder .content__item .content__text {
+  width: 72%;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -198,4 +203,59 @@ a {
   line-height: 1.2;
   color: #909090;
   text-align: center;
+}
+
+.basket {
+  width: auto;
+  margin: 6% 0 0;
+  padding: 0;
+}
+.basket .basket-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.basket .basket-holder .basket__item {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.basket .basket-holder .basket__item .basket__title {
+  width: auto;
+  margin: 0 0 6%;
+  padding: 0;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 44px;
+  color: #6f7173;
+}
+.basket .basket-holder .basket__item--additional {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+.basket .basket-holder .basket__item--additional .basket__subtitle {
+  width: auto;
+  margin: 4% 0 6%;
+  padding: 0;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 44px;
+  color: #6f7173;
+}
+.basket .basket-holder .basket__item--additional .basket__text {
+  width: 78.5%;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 38px;
+  color: #909090;
 }
