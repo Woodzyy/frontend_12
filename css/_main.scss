@@ -2,7 +2,6 @@
     background-image: url(../img/blur.png);
     background-size: cover;
 
-
     .title__item {
         @include flex(flex, row, space-around, center, nowrap);
 
@@ -34,6 +33,53 @@
                     color: $colorMain;
                     text-decoration: none;
                 }
+            }
+        }
+    }
+}
+
+.content {
+    @include setWrapper(auto, 5% 0, 0);
+
+    .content-holder {
+        @include flex (flex, row, space-around, center, nowrap);
+
+        .content__item {
+            @include flex (flex, column, space-around, center, nowrap);
+
+            .content__item--primary,
+            .content__item--secondary,
+            .content__item--additional {
+                @include flex (flex, row, center, center, wrap);
+                @include setWrapper (186px, 0, 0);
+                height: 186px;
+                border-radius: 50%;
+            }
+
+            .content__item--primary {
+                background-color: $colorAdditional;
+            }
+
+            .content__item--secondary {
+                background-color: $colorSecondary;
+            }
+
+            .content__item--additional {
+                background-color: $colorSpecial;
+            }
+
+            .content-title {
+                @include setWrapper(77%, 6% 0 0, 0);
+                @include setFont (400, 24px, 44px);
+                text-align: center;
+                color: $colorAdditional;
+            }
+
+            .content-text {
+                @include setWrapper(77%, 0, 0);
+                @include setFont (400, 14px, 1.2);
+                color: $colorText;
+                text-align: center;
             }
         }
     }
