@@ -1,0 +1,40 @@
+.title {
+    background-image: url(../img/blur.png);
+    background-size: cover;
+
+
+    .title__item {
+        @include flex(flex, row, space-around, center, nowrap);
+
+        .title__text {
+            @include setWrapper (39%, 0, 0);
+            color: #ffffff;
+
+            .title__text--primary {
+                @include setFont (400, 42px, 44px);
+            }
+
+            .title__text--secondary {
+                width: 61%;
+                @include setFont (400, 28px, 44px);
+            }
+
+            .title__text--special {
+                @include flex (flex, row, center, center, nowrap);
+                @include setWrapper (43%, 4% 2%, 0);
+                @include setFont (400, 22px, 44px);
+                column-gap: 4%;
+                background-color: $colorAdditional;
+
+                &:hover {
+                    background-color: rgb(25, 115, 249);
+                }
+
+                .title__link {
+                    color: $colorMain;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

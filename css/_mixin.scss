@@ -5,3 +5,15 @@
     align-items: $ai;
     flex-wrap: $wrap;
 }
+
+@mixin setWrapper ($width, $mar, $pad, ) {
+    width: $width;
+    margin: $mar;
+    padding: $pad;
+}
+
+@mixin setFont ($fw, $fs, $lh) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}

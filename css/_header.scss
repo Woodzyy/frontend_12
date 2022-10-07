@@ -1,56 +1,56 @@
-@import "mixin";
-
 .header {
-    @include flex(flex, row, space-around, center, nowrap);
     background-color: $colorMain;
 
-    .logo {
+    .header__item {
         @include flex(flex, row, space-between, center, nowrap);
-        margin: 33px 0;
-        width: 12%;
+        @include setWrapper (auto, 0 0 .5%, 2% 2%);
+        // border: 2px solid rgb(0, 13, 255);
 
-        .logo__block {
-            @include flex(flex, row, center, center, nowrap);
-            background-color: $colorAdditional;
-            border-radius: 50%;
-            width: 44px;
-            height: 44px;
+        .logo {
+            @include flex(flex, row, space-around, center, nowrap);
+            width: 18%;
+
+            .logo__block {
+                @include flex(flex, row, center, center, nowrap);
+                background-color: $colorAdditional;
+                border-radius: 50%;
+                width: 44px;
+                height: 44px;
+            }
+
+            .logo__cap {
+                font-size: 42.4px;
+                line-height: 1.2;
+                font-weight: 400;
+                letter-spacing: 0.01em;
+                color: #000000;
+            }
         }
 
-        .logo__cap {
-            font-size: 42.4px;
-            line-height: 1.2;
-            font-weight: 400;
-            letter-spacing: 0.01em;
-            color: #000000;
-        }
-    }
+        .nav {
+            width: 36%;
+            // border: 2px solid green;
 
-    .nav {
-        width: 28%;
+            .menu {
+                @include flex(flex, row, space-between, center, nowrap);
+                column-gap: 4%;
+                font-size: 20.4px;
+                line-height: 1.2;
+                font-weight: 400;
+                letter-spacing: 0.01em;
 
-        .menu {
-            @include flex(flex, row, space-between, center, nowrap);
-            font-size: 20.4px;
-            line-height: 1.2;
-            font-weight: 400;
-            letter-spacing: 0.01em;
-
-                .menu__link{
+                .menu__link {
                     color: #7b7b7b;
                     padding: 43px 0;
-    
+
                     &:hover {
                         color: #5e5e5e;
                         border-bottom: 4px solid #5094f2;
                     }
                 }
             }
-           
-            
-            
-           
         }
     }
 
 
+}
