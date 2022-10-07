@@ -1,0 +1,12 @@
+.footer {
+    @include setWrapper (auto, 0 0 3%, 0);
+
+    .footer__item {
+        @include flex (flex, row, center, center, wrap);
+
+        .footer__text {
+            @include setFont (400, 0.9rem, 36px);
+            color: $colorText;
+        }
+    }
+}

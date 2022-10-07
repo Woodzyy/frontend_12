@@ -1,3 +1,4 @@
+// title 
 .title {
     background-image: url(../img/blur.png);
     background-size: cover;
@@ -14,18 +15,18 @@
             color: #ffffff;
 
             .title__text--primary {
-                @include setFont (400, 42px, 44px);
+                @include setFont (400, 2.6rem, 44px);
             }
 
             .title__text--secondary {
                 @include setWrapper (61%, 2% 0, 0);
-                @include setFont (400, 28px, 44px);
+                @include setFont (400, 1.75rem, 44px);
             }
 
             .title__text--special {
                 @include flex (flex, row, center, center, nowrap);
                 @include setWrapper (36%, 4% 2%, 0);
-                @include setFont (400, 22px, 44px);
+                @include setFont (400, 1.3rem, 44px);
                 column-gap: 4%;
                 background-color: $colorAdditional;
 
@@ -42,6 +43,7 @@
     }
 }
 
+// content 
 .content {
     @include setWrapper(auto, 5% 0, 0);
 
@@ -51,6 +53,7 @@
         .content__item {
             @include flex (flex, column, space-around, center, nowrap);
 
+            // overrral settings for content__items 
             .content__item--primary,
             .content__item--secondary,
             .content__item--additional {
@@ -74,14 +77,14 @@
 
             .content__title {
                 @include setWrapper(77%, 6% 0 0, 0);
-                @include setFont (400, 24px, 44px);
+                @include setFont (400, 1.5rem, 44px);
                 text-align: center;
                 color: $colorAdditional;
             }
 
             .content__text {
                 @include setWrapper(72%, 0, 0);
-                @include setFont (400, 14px, 1.2);
+                @include setFont (400, 0.8rem, 1.2);
                 color: $colorText;
                 text-align: center;
             }
@@ -89,8 +92,9 @@
     }
 }
 
+// basket 
 .basket {
-    @include setWrapper(auto, 6% 0 0, 0);
+    @include setWrapper(auto, 6% 0 4%, 0);
 
     .basket-holder {
         @include flex (flex, row, center, center, nowrap);
@@ -101,23 +105,24 @@
 
             .basket__title {
                 @include setWrapper(auto, 0 0 6%, 0);
-                @include setFont(400, 42px, 44px);
+                @include setFont(400, 2.6rem, 44px);
                 color: $colorTitle;
             }
         }
 
+        // basket__item--additional 
         .basket__item--additional {
             @include setWrapper(50%, 0, 0);
 
             .basket__subtitle {
-                @include setWrapper(auto, 4% 0 6%, 0);
-                @include setFont(400, 26px, 44px);
+                @include setWrapper(auto, 5% 0 3%, 0);
+                @include setFont(400, 1.6rem, 44px);
                 color: $colorTitle;
             }
 
             .basket__text {
-                @include setWrapper(78.5%, 0, 0);
-                @include setFont(400, 15px, 38px);
+                @include setWrapper(63%, 0, 0);
+                @include setFont(400, 0.9rem, 38px);
                 color: $colorText;
             }
         }
